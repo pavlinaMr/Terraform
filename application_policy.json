@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "logs:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:DescribeInsightRules",
+                "cloudwatch:PutMetricData",
+                "cloudwatch:GetMetricData",
+                "cloudwatch:DescribeAlarmsForMetric",
+                "cloudwatch:ListDashboards",
+                "cloudwatch:PutAnomalyDetector",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:GetMetricWidgetImage",
+                "cloudwatch:DeleteAnomalyDetector",
+                "cloudwatch:ListMetrics",
+                "cloudwatch:DescribeAnomalyDetectors"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
