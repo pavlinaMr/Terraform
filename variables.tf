@@ -1,9 +1,21 @@
-variable "public_subnet1" {
+variable "region" {
+    type = string
 }
-variable "public_subnet2" {
-  
+
+variable "vpc_cidr" {
+    type = map(string)
 }
-variable "vpc_id" {
+
+variable "subnets" {
+    type = map(string)
+}
+
+variable "availability_zone_A" {
+    type = string
+}
+
+variable "availability_zone_B" {
+    type = string
 }
 
 variable "taggings" {
@@ -16,6 +28,4 @@ variable "taggings" {
     }
 } 
 
-variable "application_sg" {
-  
-}
+variable "namespace" {}
